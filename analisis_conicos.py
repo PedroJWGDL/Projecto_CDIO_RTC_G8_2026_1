@@ -6,14 +6,12 @@ import math
         self.m = modulo
         
     def calcular_geometria(self):
-        # Relación de transmisión
+
         i = self.z2 / self.z1
         
-        # Ángulos de paso (pitch angles)
         gamma1 = math.atan(self.z1 / self.z2)
         gamma2 = math.atan(self.z2 / self.z1)
         
-        # Diámetros primitivos
         d1 = self.m * self.z1
         d2 = self.m * self.z2
         
@@ -25,7 +23,6 @@ import math
             "diametro_corona": d2
         }
 
-# Ejemplo de uso
 if __name__ == "__main__":
     pipñon = 20
     corona = 60
