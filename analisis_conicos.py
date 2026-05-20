@@ -17,14 +17,14 @@ import math
         
         return {
             "relacion_transmision": round(i, 3),
-            "angulo_pinhon_rad": round(gamma1, 4),
+            "angulo_piñon_rad": round(gamma1, 4),
             "angulo_corona_rad": round(gamma2, 4),
-            "diametro_pinhon": d1,
+            "diametro_piñon": d1,
             "diametro_corona": d2
         }
 
 if __name__ == "__main__":
-    pipñon = 20
+    piñon = 20
     corona = 60
     modulo = 3
     
@@ -33,6 +33,6 @@ if __name__ == "__main__":
     
     print(f"--- Análisis de Engranajes Cónicos (m={modulo}) ---")
     print(f"Relación de transmisión: {resultados['relacion_transmision']}:1")
-    print(f"Diámetro primitivo piñón: {resultados['diametro_pinhon']} mm")
+    print(f"Diámetro primitivo piñón: {resultados['diametro_piñon']} mm")
     print(f"Diámetro primitivo corona: {resultados['diametro_corona']} mm")
-    print(f"Ángulo de paso piñón: {math.degrees(resultados['angulo_pinhon_rad']):.2f}°")
+    print(f"Ángulo de paso piñón: {math.degrees(resultados['angulo_piñon_rad']):.2f}°")
