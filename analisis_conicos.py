@@ -23,7 +23,7 @@ import math
             "diametro_corona": d2
         }
 
-if __name__ == "__main__":
+if nombre == "main":
     piñon = 20
     corona = 60
     modulo = 3
